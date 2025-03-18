@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Productos - </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00; /* Color de fondo del encabezado */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+        section.productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .producto {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+            cursor: pointer;
+            width: 220px; /* Ancho fijo para los productos */
+            transition: transform 0.2s, box-shadow 0.2s; /* Efecto de transición */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el producto */
+        }
+        .producto:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+        }
+        .producto img {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 8px; /* Bordes redondeados para la imagen */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        footer nav a:hover {
+            text-decoration: underline; /* Subrayar al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Productos</h1>
+    </header>
+    <section class="productos">
+        <div class="producto" onclick="verProducto('Producto 1', 'Descripción del producto 1', 35)">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>Precio: $35</p>
+        </div>
+        <div class="producto" onclick="verProducto('Producto 2', 'Descripción del producto 2', 35)">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h2>Producto 2</h2>
+            <p>Precio: $35</p>
+        </div>
+        <div class="producto" onclick="verProducto('Producto 3', 'Descripción del producto 3', 26)">
+            <img src="producto3.jpg" alt="Producto 3">
+            <h2>Producto 3</h2>
+            <p>Precio: $26</p>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script>
+        function verProducto(nombre, descripcion, precio) {
+            alert("Nombre: " + nombre + "\nDescripción: " + descripcion + "\nPrecio: $" + precio);
+        }
+    </script>
+</body>
+</html>
