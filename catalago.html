@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Inicio - canelles</title>
+    <title>Catálogo - Canelles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,19 +25,46 @@
             margin: 10px 0;
             font-size: 2.5em;
         }
-        p {
-            max-width: 800px;
-            margin: 10px auto;
-            line-height: 1.6;
+        nav {
+            background-color: #333; /* Fondo del menú de navegación */
+            padding: 10px 0;
         }
-        section.equipo {
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centrar los enlaces del menú */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s; /* Transición suave para el color */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Subrayar al pasar el mouse */
+            color: #ffcc00; /* Cambiar color al pasar el mouse */
+        }
+        section.catalogo {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin: 40px 0;
         }
-        section.equipo img {
-            max-width: 100%;
+        .producto img {
+            max-width: 100%; /* Tamaño de la imagen del producto */
             height: auto;
-            border-radius: 10px; /* Bordes redondeados para la imagen del equipo */
+            border-radius: 10px; /* Bordes redondeados para la imagen del producto */
+        }
+        .precio {
+            font-size: 1.5em;
+            color: #ffcc00; /* Color del precio */
+            margin: 10px 0;
         }
         footer {
             background-color: #333;
@@ -53,21 +80,6 @@
         footer nav a:hover {
             text-decoration: underline; /* Subrayar al pasar el mouse */
         }
-        .valores {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-        .valor {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 10px;
-            flex: 1 1 200px; /* Flexibilidad en el tamaño */
-            box-shadow: 0 2px 5px rgba(0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
@@ -75,37 +87,31 @@
         <div class="logo">
             <img src="logo.jpg" alt="Logo de la Empresa">
         </div>
-        <h1>Bienvenidos a Canelles</h1>
-        <p>Ser la marca líder en la producción y venta de churros de yuca, reconocida por la calidad de nuestros productos y por fomentar una alimentación saludable y deliciosa, que resalte los sabores tradicionales de nuestra cultura.</p>
-        <p>Ofrecer a nuestros clientes una experiencia gastronómica única a través de churros de yuca frescos, elaborados con ingredientes naturales y locales. Buscamos innovar en el mercado de postres, brindando opciones deliciosas que sean aptas para diferentes dietas, mientras apoyamos a los productores locales.</p>
+        <h1>Catálogo de Productos</h1>
         
-        <div class="valores">
-            <div class="valor">
-                <h3>Calidad</h3>
-                <p>Comprometidos con la excelencia en cada producto que ofrecemos.</p>
-            </div>
-            <div class="valor">
-                <h3>Sostenibilidad</h3>
-                <p>Priorizamos el uso de ingredientes locales y prácticas responsables.</p>
-            </div>
-            <div class="valor">
-                <h3>Innovación</h3>
-                <p>Buscamos constantemente nuevas recetas y formas de preparar nuestros churros.</p>
-            </div>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="equipo">
-        <h2>Conoce a Nuestro Equipo</h2>
-        <img src="equipo.jpg" alt="Nuestro Equipo">
+
+    <section class="catalogo">
+        <h2>Churros de Yuca</h2>
+        <img src="churros.jpg" alt="Churros"> <!-- Asegúrate de que la imagen esté en la ruta correcta -->
+        <p>Deliciosos churros elaborados con yuca fresca, perfectos para disfrutar en cualquier momento. Crujientes por fuera y suaves por dentro, son una opción ideal para un postre o un snack.</p>
+        <p class="precio">$50.00</p>
+        <button type="button">Agregar al Carrito</button> <!-- Botón para agregar al carrito -->
     </section>
-    
+
     <footer>
         <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </footer>
 </body>
 </html>
