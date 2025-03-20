@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Inicio - canelles</title>
+    <title>Inicio - Canelles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,13 +45,19 @@
             padding: 10px 0;
             text-align: center;
         }
+        footer nav {
+            display: flex;
+            justify-content: center; /* Centrar los enlaces del menú */
+        }
         footer nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            transition: color 0.3s; /* Transición suave para el color */
         }
         footer nav a:hover {
             text-decoration: underline; /* Subrayar al pasar el mouse */
+            color: #ffcc00; /* Cambiar color al pasar el mouse */
         }
         .valores {
             display: flex;
@@ -66,7 +72,7 @@
             padding: 15px;
             margin: 10px;
             flex: 1 1 200px; /* Flexibilidad en el tamaño */
-            box-shadow: 0 2px 5px rgba(0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -102,10 +108,8 @@
     
     <footer>
         <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    </footer>
-</body>
-</html>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Productos</a> <!-- Asegúrate de que este enlace apunte a la página correcta -->
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </
