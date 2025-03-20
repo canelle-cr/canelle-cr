@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Contacto - Malteadas ASBEIMYI</title>
+    <title>Contacto - Churros canelle</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +21,28 @@
         h1 {
             margin: 10px 0;
             font-size: 2.5em;
+        }
+        nav {
+            background-color: #333; /* Fondo del menú de navegación */
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centrar los enlaces del menú */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s; /* Transición suave para el color */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Subrayar al pasar el mouse */
+            color: #ffcc00; /* Cambiar color al pasar el mouse */
         }
         section.contacto {
             max-width: 600px;
@@ -87,6 +109,13 @@
 <body>
     <header>
         <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="contacto">
         <h2>Envíanos un Mensaje</h2>
@@ -100,16 +129,4 @@
             <button type="submit">Enviar</button>
         </form>
         <h2>Información de Contacto</h2>
-        <p>Correo: <a href="mailto:karelydelacruzbernardo@gmail.com">karelydelacruzbernardo@gmail.com</a></p>
-        <p>Teléfono: <a href="tel: +52 998 496 3687"> +52 998 496 3687</a></p>
-        <p>Ubicación: COBATAB plantel 32, Libertad, Cunduacán, Tabasco, México</p>
-    </section>
-    <footer>
-        <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    </footer>
-</body>
-</html>
+        <p>Correo:
